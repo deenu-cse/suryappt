@@ -149,14 +149,8 @@
             background: #ff5722;
             transform: scale(1.05);
         }
-        .nav-btn:hover {
-            background: #ff5722;
-            transform: scale(1.05);
-        color: white;
-        text-decoration: none;
-        }
         .nav-btn:disabled {
-            background: not-allowed;
+            background: #ccc;
             cursor: not-allowed;
             transform: none;
         }
@@ -260,23 +254,58 @@
             <h2><span class="icon">📑</span>Table of Contents</h2>
             <ul class="index-list">
                 <li><a href="javascript:void(0)" onclick="goToSlide(0)"><span class="icon">☀</span>Title</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(2)"><span class="icon">🎯</span>Objectives</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(3)"><span class="icon">☀</span>Why Solar Energy?</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(4)"><span class="icon">📋</span>Phase 1: Project Planning & Engagement</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(5)"><span class="icon">🚀</span>Phase 2: Implementation</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(6)"><span class="icon">📞</span>Phase 3: Follow-Up & Evaluation</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(7)"><span class="icon">🔧</span>How Solar Works & Installation</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(8)"><span class="icon">📏</span>Types of Solar Panels</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(9)"><span class="icon">💡</span>Key Messages</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(10)"><span class="icon">🤝</span>Engagement Strategies</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(11)"><span class="icon">📊</span>Measuring Success</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(12)"><span class="icon">🔧</span>Resources & Support</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(13)"><span class="icon">🌟</span>Making Solar Samvad Successful</a></li>
-                <li><a href="javascript:void(0)" onclick="goToSlide(14)"><span class="icon">📝</span>Notes for Implementation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(2)"><span class="icon">👥</span>Group Members' Roles</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(3)"><span class="icon">🎯</span>Objectives</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(4)"><span class="icon">☀</span>Why Solar Energy?</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(5)"><span class="icon">📋</span>Phase 1: Project Planning & Engagement</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(6)"><span class="icon">🚀</span>Phase 2: Implementation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(7)"><span class="icon">📞</span>Phase 3: Follow-Up & Evaluation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(8)"><span class="icon">🔧</span>How Solar Works & Installation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(9)"><span class="icon">📏</span>Types of Solar Panels</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(10)"><span class="icon">💡</span>Key Messages</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(11)"><span class="icon">🤝</span>Engagement Strategies</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(12)"><span class="icon">📊</span>Measuring Success</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(13)"><span class="icon">🔧</span>Resources & Support</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(14)"><span class="icon">🌟</span>Making Solar Samvad Successful</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(15)"><span class="icon">📝</span>Notes for Implementation</a></li>
             </ul>
         </div>
 
-        <!-- Slide 3: Objectives -->
+        <!-- Slide 3: Group Members' Roles and Responsibilities -->
+        <div class="slide">
+            <h2><span class="icon">👥</span>Group Members' Roles and Responsibilities</h2>
+            <div class="phase-grid">
+                <div class="phase-card">
+                    <h3>Member 1 (Pages 1–6)</h3>
+                    <ul>
+                        <li>Introduces the topic and sets objectives</li>
+                        <li>Presents initial content</li>
+                        <li>Ensures clarity and engages group</li>
+                        <li>Facilitates smooth progress</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h3>Member 2 (Pages 7–12)</h3>
+                    <ul>
+                        <li>Develops detailed content</li>
+                        <li>Elaborates on ideas</li>
+                        <li>Documents key points</li>
+                        <li>Ensures accuracy and coherence</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h3>Member 3 (Pages 13–15)</h3>
+                    <ul>
+                        <li>Concludes presentation</li>
+                        <li>Summarizes key findings</li>
+                        <li>Delivers final part</li>
+                        <li>Manages time and coordinates efforts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Objectives -->
         <div class="slide">
             <h2><span class="icon">🎯</span>Objectives of Solar Samvad</h2>
             <ul>
@@ -292,7 +321,7 @@
             </div>
         </div>
 
-        <!-- Slide 4: Why Solar? -->
+        <!-- Slide 5: Why Solar? -->
         <div class="slide">
             <h2><span class="icon">☀</span>Why Solar Energy?</h2>
             <div class="phase-grid">
@@ -329,7 +358,7 @@
             </div>
         </div>
 
-        <!-- Slide 5: Phase 1 - Project Planning & Community Engagement -->
+        <!-- Slide 6: Phase 1 - Project Planning & Community Engagement -->
         <div class="slide">
             <h2><span class="icon">📋</span>Phase 1: Project Planning & Engagement</h2>
             <div class="phase-grid">
@@ -369,7 +398,7 @@
             </div>
         </div>
 
-        <!-- Slide 6: Phase 2 - Implementation -->
+        <!-- Slide 7: Phase 2 - Implementation -->
         <div class="slide">
             <h2><span class="icon">🚀</span>Phase 2: Implementation</h2>
             <h3>Session Structure (2.5 hours)</h3>
@@ -396,7 +425,7 @@
             </div>
         </div>
 
-        <!-- Slide 7: Phase 3 - Follow-Up & Evaluation -->
+        <!-- Slide 8: Phase 3 - Follow-Up & Evaluation -->
         <div class="slide">
             <h2><span class="icon">📞</span>Phase 3: Follow-Up & Evaluation</h2>
             <div class="phase-grid">
@@ -430,7 +459,7 @@
             </div>
         </div>
 
-        <!-- Slide 8: How Solar Works & Installation -->
+        <!-- Slide 9: How Solar Works & Installation -->
         <div class="slide">
             <h2><span class="icon">🔧</span>How Solar Works & Installation</h2>
             <div class="phase-grid">
@@ -466,7 +495,7 @@
             </div>
         </div>
 
-        <!-- Slide 9: Types of Solar Panels -->
+        <!-- Slide 10: Types of Solar Panels -->
         <div class="slide">
             <h2><span class="icon">📏</span>Types of Solar Panels</h2>
             <div class="phase-grid">
@@ -506,7 +535,7 @@
             </div>
         </div>
 
-        <!-- Slide 10: Key Messages -->
+        <!-- Slide 11: Key Messages -->
         <div class="slide">
             <h2><span class="icon">💡</span>Key Messages</h2>
             <div class="phase-grid">
@@ -545,7 +574,7 @@
             </div>
         </div>
 
-        <!-- Slide 11: Community Engagement Strategies -->
+        <!-- Slide 12: Community Engagement Strategies -->
         <div class="slide">
             <h2><span class="icon">🤝</span>Engagement Strategies</h2>
             <h3>Interactive Techniques</h3>
@@ -566,7 +595,7 @@
             </div>
         </div>
 
-        <!-- Slide 12: Success Metrics -->
+        <!-- Slide 13: Success Metrics -->
         <div class="slide">
             <h2><span class="icon">📊</span>Measuring Success</h2>
             <div class="phase-grid">
@@ -608,7 +637,7 @@
             </div>
         </div>
 
-        <!-- Slide 13: Resources & Support -->
+        <!-- Slide 14: Resources & Support -->
         <div class="slide">
             <h2><span class="icon">🔧</span>Resources & Support</h2>
             <div class="resources-grid">
@@ -651,7 +680,7 @@
             </div>
         </div>
 
-        <!-- Slide 14: Conclusion -->
+        <!-- Slide 15: Conclusion -->
         <div class="slide">
             <h2><span class="icon">🌟</span>Making Solar Samvad Successful</h2>
             <h3>Key Principles</h3>
@@ -673,7 +702,7 @@
             </div>
         </div>
 
-        <!-- Slide 15: Notes for Implementation -->
+        <!-- Slide 16: Notes for Implementation -->
         <div class="slide">
             <h2><span class="icon">📝</span>Notes for Implementation</h2>
             <div class="phase-grid">
@@ -710,7 +739,7 @@
         <div class="navigation">
             <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">Previous</button>
             <span class="slide-counter">
-                <span id="currentSlide">1</span> / <span id="totalSlides">15</span>
+                <span id="currentSlide">1</span> / <span id="totalSlides">16</span>
             </span>
             <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next</button>
         </div>
