@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar Samvad - Community Engagement Program</title>
     <style>
-        /* Existing CSS styles remain unchanged */
         * {
             margin: 0;
             padding: 0;
@@ -150,8 +149,14 @@
             background: #ff5722;
             transform: scale(1.05);
         }
+        .nav-btn:hover {
+            background: #ff5722;
+            transform: scale(1.05);
+        color: white;
+        text-decoration: none;
+        }
         .nav-btn:disabled {
-            background: #95a5a6;
+            background: not-allowed;
             cursor: not-allowed;
             transform: none;
         }
@@ -212,6 +217,32 @@
                 transform: rotate(360deg);
             }
         }
+        .index-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        .index-list li {
+            margin-bottom: 15px;
+            padding-left: 0;
+        }
+        .index-list a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .index-list a:hover {
+            background: #ffe8d6;
+            color: #ff6b35;
+        }
+        .index-list .icon {
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -224,7 +255,28 @@
             <p>Empowering Diverse Communities Through Inclusive Solar Energy Education</p>
         </div>
 
-        <!-- Slide 2: Objectives -->
+        <!-- Slide 2: Index -->
+        <div class="slide">
+            <h2><span class="icon">📑</span>Table of Contents</h2>
+            <ul class="index-list">
+                <li><a href="javascript:void(0)" onclick="goToSlide(0)"><span class="icon">☀</span>Title</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(2)"><span class="icon">🎯</span>Objectives</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(3)"><span class="icon">☀</span>Why Solar Energy?</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(4)"><span class="icon">📋</span>Phase 1: Project Planning & Engagement</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(5)"><span class="icon">🚀</span>Phase 2: Implementation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(6)"><span class="icon">📞</span>Phase 3: Follow-Up & Evaluation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(7)"><span class="icon">🔧</span>How Solar Works & Installation</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(8)"><span class="icon">📏</span>Types of Solar Panels</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(9)"><span class="icon">💡</span>Key Messages</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(10)"><span class="icon">🤝</span>Engagement Strategies</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(11)"><span class="icon">📊</span>Measuring Success</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(12)"><span class="icon">🔧</span>Resources & Support</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(13)"><span class="icon">🌟</span>Making Solar Samvad Successful</a></li>
+                <li><a href="javascript:void(0)" onclick="goToSlide(14)"><span class="icon">📝</span>Notes for Implementation</a></li>
+            </ul>
+        </div>
+
+        <!-- Slide 3: Objectives -->
         <div class="slide">
             <h2><span class="icon">🎯</span>Objectives of Solar Samvad</h2>
             <ul>
@@ -240,7 +292,7 @@
             </div>
         </div>
 
-        <!-- Slide 3: Why Solar? -->
+        <!-- Slide 4: Why Solar? -->
         <div class="slide">
             <h2><span class="icon">☀</span>Why Solar Energy?</h2>
             <div class="phase-grid">
@@ -277,44 +329,47 @@
             </div>
         </div>
 
-        <!-- Slide 4: Phase 1 - Project Planning & Community Engagement -->
+        <!-- Slide 5: Phase 1 - Project Planning & Community Engagement -->
         <div class="slide">
             <h2><span class="icon">📋</span>Phase 1: Project Planning & Engagement</h2>
             <div class="phase-grid">
                 <div class="phase-card">
                     <h3>Stakeholder Partnerships</h3>
                     <ul>
-                        <li>Engage CBOs, nonprofits, schools</li>
-                        <li>Collaborate with utilities</li>
-                        <li>Form advisory group with locals</li>
+                        <li>Engage CBOs, nonprofits, schools, faith-based groups</li>
+                        <li>Collaborate with utilities for grid insights</li>
+                        <li>Form advisory group with community representatives</li>
+                        <li>Sign MOUs to define roles and goals</li>
                     </ul>
                 </div>
                 <div class="phase-card">
                     <h3>Needs Assessment</h3>
                     <ul>
-                        <li>Conduct focus groups/surveys</li>
+                        <li>Conduct focus groups/surveys with DOE’s DAC Reporter</li>
                         <li>Target LMI and DAC communities</li>
-                        <li>Identify barriers (cost, trust)</li>
+                        <li>Identify barriers (cost, trust, language)</li>
+                        <li>Offer compensation for participation</li>
                     </ul>
                 </div>
                 <div class="phase-card">
                     <h3>Materials & Platform</h3>
                     <ul>
-                        <li>Create multilingual flyers, videos</li>
-                        <li>Launch Solar Samvad website</li>
+                        <li>Create multilingual flyers, videos, FAQs</li>
+                        <li>Launch Solar Samvad website and social media</li>
                         <li>Develop solar potential map</li>
+                        <li>Address renter and community solar concerns</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="icon">📅</div>
-                    <div><strong>Timeline:</strong> Month 1<br><em>Deliverables:</em> Partner list, needs report, materials</div>
+                    <div><strong>Timeline:</strong> Month 1<br><em>Deliverables:</em> Partner list, MOUs, needs report, materials, website</div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 5: Phase 2 - Implementation -->
+        <!-- Slide 6: Phase 2 - Implementation -->
         <div class="slide">
             <h2><span class="icon">🚀</span>Phase 2: Implementation</h2>
             <h3>Session Structure (2.5 hours)</h3>
@@ -328,15 +383,20 @@
                 <div class="timeline-item"><div class="icon">❓</div><div><strong>Q&A (30 min)</strong><br>Address concerns</div></div>
                 <div class="timeline-item"><div class="icon">📝</div><div><strong>Closing (15 min)</strong><br>Next steps, feedback</div></div>
             </div>
-            <h3>Outreach</h3>
+            <h3>Outreach & Engagement</h3>
             <ul>
                 <li>Multimedia campaign: radio, social media, flyers</li>
-                <li>Host workshops in community spaces</li>
-                <li>Promote job fairs for solar careers</li>
+                <li>Host workshops and town halls in community spaces</li>
+                <li>Provide interpreters, childcare for accessibility</li>
+                <li>Partner with colleges for job training programs</li>
+                <li>Promote job fairs for solar careers (installation, maintenance)</li>
             </ul>
+            <div class="highlight-box">
+                <strong>Focus:</strong> Transparent contracts, no exit fees, clear benefits for renters
+            </div>
         </div>
 
-        <!-- Slide 6: Phase 3 - Follow-Up & Evaluation -->
+        <!-- Slide 7: Phase 3 - Follow-Up & Evaluation -->
         <div class="slide">
             <h2><span class="icon">📞</span>Phase 3: Follow-Up & Evaluation</h2>
             <div class="phase-grid">
@@ -370,7 +430,7 @@
             </div>
         </div>
 
-        <!-- Slide 7: How Solar Works & Installation -->
+        <!-- Slide 8: How Solar Works & Installation -->
         <div class="slide">
             <h2><span class="icon">🔧</span>How Solar Works & Installation</h2>
             <div class="phase-grid">
@@ -406,7 +466,7 @@
             </div>
         </div>
 
-        <!-- Slide 8: Types of Solar Panels -->
+        <!-- Slide 9: Types of Solar Panels -->
         <div class="slide">
             <h2><span class="icon">📏</span>Types of Solar Panels</h2>
             <div class="phase-grid">
@@ -446,7 +506,7 @@
             </div>
         </div>
 
-        <!-- Slide 9: Key Messages -->
+        <!-- Slide 10: Key Messages -->
         <div class="slide">
             <h2><span class="icon">💡</span>Key Messages</h2>
             <div class="phase-grid">
@@ -485,7 +545,7 @@
             </div>
         </div>
 
-        <!-- Slide 10: Community Engagement Strategies -->
+        <!-- Slide 11: Community Engagement Strategies -->
         <div class="slide">
             <h2><span class="icon">🤝</span>Engagement Strategies</h2>
             <h3>Interactive Techniques</h3>
@@ -506,46 +566,49 @@
             </div>
         </div>
 
-        <!-- Slide 11: Success Metrics -->
+        <!-- Slide 12: Success Metrics -->
         <div class="slide">
             <h2><span class="icon">📊</span>Measuring Success</h2>
             <div class="phase-grid">
                 <div class="phase-card">
                     <h3>Participation</h3>
                     <ul>
-                        <li>Number of attendees</li>
-                        <li>LMI and DAC participation</li>
-                        <li>Feedback scores</li>
+                        <li>Number of attendees (target: 100+ per event)</li>
+                        <li>50%+ LMI and DAC participation</li>
+                        <li>Feedback scores (4+/5 satisfaction)</li>
                     </ul>
                 </div>
                 <div class="phase-card">
                     <h3>Awareness</h3>
                     <ul>
-                        <li>Pre/post knowledge gain</li>
+                        <li>70%+ knowledge gain (pre/post surveys)</li>
                         <li>Myth-busting success</li>
-                        <li>Information retention</li>
+                        <li>Website visits and FAQ engagement</li>
                     </ul>
                 </div>
                 <div class="phase-card">
                     <h3>Behavioral Change</h3>
                     <ul>
-                        <li>50+ inquiries for solar</li>
-                        <li>Adoption rates</li>
-                        <li>Community advocacy</li>
+                        <li>50+ inquiries/sign-ups for solar</li>
+                        <li>Adoption rates in LMI communities</li>
+                        <li>Community advocacy and champions</li>
                     </ul>
                 </div>
                 <div class="phase-card">
                     <h3>Long-term Impact</h3>
                     <ul>
                         <li>Solar capacity installed</li>
-                        <li>Energy independence</li>
-                        <li>Environmental benefits</li>
+                        <li>Energy independence for DACs</li>
+                        <li>CO2 reduction and job creation</li>
                     </ul>
                 </div>
             </div>
+            <div class="highlight-box">
+                <strong>Goal:</strong> Replicable model for equitable solar adoption
+            </div>
         </div>
 
-        <!-- Slide 12: Resources & Support -->
+        <!-- Slide 13: Resources & Support -->
         <div class="slide">
             <h2><span class="icon">🔧</span>Resources & Support</h2>
             <div class="resources-grid">
@@ -588,7 +651,7 @@
             </div>
         </div>
 
-        <!-- Slide 13: Conclusion -->
+        <!-- Slide 14: Conclusion -->
         <div class="slide">
             <h2><span class="icon">🌟</span>Making Solar Samvad Successful</h2>
             <h3>Key Principles</h3>
@@ -610,10 +673,44 @@
             </div>
         </div>
 
+        <!-- Slide 15: Notes for Implementation -->
+        <div class="slide">
+            <h2><span class="icon">📝</span>Notes for Implementation</h2>
+            <div class="phase-grid">
+                <div class="phase-card">
+                    <h3>Local Adaptation</h3>
+                    <ul>
+                        <li>Customize for urban/rural contexts</li>
+                        <li>Align with state solar policies</li>
+                        <li>Check community solar regulations</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h3>Addressing Misinformation</h3>
+                    <ul>
+                        <li>Monitor feedback for myths</li>
+                        <li>Clarify costs, reliability concerns</li>
+                        <li>Use trusted local voices</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <h3>Momentum Building</h3>
+                    <ul>
+                        <li>Celebrate milestones (e.g., first workshop)</li>
+                        <li>Share success stories regularly</li>
+                        <li>Engage youth and schools</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <strong>Key:</strong> Adapt, monitor, and celebrate to sustain engagement
+            </div>
+        </div>
+
         <div class="navigation">
             <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">Previous</button>
             <span class="slide-counter">
-                <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
+                <span id="currentSlide">1</span> / <span id="totalSlides">15</span>
             </span>
             <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next</button>
         </div>
@@ -638,6 +735,13 @@
             const newIndex = currentSlideIndex + direction;
             if (newIndex >= 0 && newIndex < totalSlides) {
                 currentSlideIndex = newIndex;
+                showSlide(currentSlideIndex);
+            }
+        }
+
+        function goToSlide(index) {
+            if (index >= 0 && index < totalSlides) {
+                currentSlideIndex = index;
                 showSlide(currentSlideIndex);
             }
         }
